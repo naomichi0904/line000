@@ -417,7 +417,7 @@ public class SampleController {
                                         new MessageAction("LINE3に行く",
                                                            "LINEだよー")
                                 )),
-                                new CarouselColumn(imageUrl, "hoge", "fuga", Arrays.asList(
+                                new CarouselColumn(imageUrl2, "hoge", "fuga", Arrays.asList(
                                         new PostbackAction("言 hello2",
                                                            "hello こんにちは",
                                                            "hello こんにちは"),
@@ -427,7 +427,7 @@ public class SampleController {
                                         new MessageAction("Say message",
                                                           "Rice=米")
                                 )),
-                                new CarouselColumn(imageUrl, "Datetime Picker",
+                                new CarouselColumn(imageUrl3, "Datetime Picker",
                                                    "Please select a date, time or datetime", Arrays.asList(
                                         DatetimePickerAction.OfLocalDatetime
                                                 .builder()
@@ -453,6 +453,16 @@ public class SampleController {
                                                 .min(LocalTime.parse("00:00"))
                                                 .max(LocalTime.parse("23:59"))
                                                 .build()
+                                )),
+                            new CarouselColumn(imageUrl4, "hoge", "fuga", Arrays.asList(
+                                        new PostbackAction("言 hello2",
+                                                           "hello こんにちは",
+                                                           "hello こんにちは"),
+                                        new PostbackAction("言 hello2",
+                                                           "hello こんにちは",
+                                                           "hello こんにちは"),
+                                        new MessageAction("Say message",
+                                                          "Rice=米")
                                 ))
                         ));
                 TemplateMessage templateMessage = new TemplateMessage("Carousel alt text", carouselTemplate);
