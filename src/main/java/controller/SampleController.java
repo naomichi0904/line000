@@ -403,7 +403,7 @@ public class SampleController {
                 break;
             }
             case "carousel": {
-                URI imageUrl = createUri("/static/buttons/1040.jpg");
+                URI imageUrl = createUri("/static/buttons/LINE.png");
                 CarouselTemplate carouselTemplate = new CarouselTemplate(
                         Arrays.asList(
                                 new CarouselColumn(imageUrl, "hoge", "fuga", Arrays.asList(
