@@ -403,16 +403,19 @@ public class SampleController {
                 break;
             }
             case "carousel": {
-                URI imageUrl = createUri("/static/buttons/LINE.png");
+                URI imageUrl1 = createUri("/static/buttons/LINE.png");
+                URI imageUrl2 = createUri("/static/buttons/Google_map.png");
+                URI imageUrl3 = createUri("/static/buttons/Google.jpg");
+                URI imageUrl4 = createUri("/static/buttons/instagram.jpg");
                 CarouselTemplate carouselTemplate = new CarouselTemplate(
                         Arrays.asList(
-                                new CarouselColumn(imageUrl, "hoge", "fuga", Arrays.asList(
-                                        new URIAction("Go to line.me",
+                                new CarouselColumn(imageUrl1, "テスト１", "テスト２", Arrays.asList(
+                                        new URIAction("LINEに行く",
                                                       URI.create("https://line.me"), null),
-                                        new URIAction("Go to line.me",
+                                        new URIAction("LINE2に行く",
                                                       URI.create("https://line.me"), null),
-                                        new PostbackAction("Say hello1",
-                                                           "hello こんにちは")
+                                        new MessageAction("LINE3に行く",
+                                                           "LINEだよー")
                                 )),
                                 new CarouselColumn(imageUrl, "hoge", "fuga", Arrays.asList(
                                         new PostbackAction("言 hello2",
