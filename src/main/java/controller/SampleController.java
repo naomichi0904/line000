@@ -469,6 +469,34 @@ public class SampleController {
                 this.reply(replyToken, templateMessage);
                 break;
             }
+                case "LINEだよー": {
+                URI imageUrl1 = createUri("/static/buttons/LINE.png");
+                URI imageUrl2 = createUri("/static/buttons/Google_map.png"); 
+                CarouselTemplate carouselTemplate = new CarouselTemplate(
+                        Arrays.asList(
+                                new CarouselColumn(imageUrl1, "テスト１", "テスト２", Arrays.asList(
+                                        new URIAction("LINEに行く",
+                                                      URI.create("https://line.me"), null),
+                                        new URIAction("LINE2に行く",
+                                                      URI.create("https://line.me"), null),
+                                        new MessageAction("LINE3に行く",
+                                                           "LINEだよー")
+                                )),
+                                new CarouselColumn(imageUrl2, "hoge", "fuga", Arrays.asList(
+                                        new PostbackAction("言 hello2",
+                                                           "hello こんにちは",
+                                                           "hello こんにちは"),
+                                        new PostbackAction("言 hello2",
+                                                           "hello こんにちは",
+                                                           "hello こんにちは"),
+                                        new MessageAction("Say message",
+                                                          "Rice=米")
+                                ))
+                        ));
+                TemplateMessage templateMessage = new TemplateMessage("Carousel alt text", carouselTemplate);
+                this.reply(replyToken, templateMessage);
+                break;
+            }
             case "image_carousel": {
                 URI imageUrl = createUri("/static/buttons/1040.jpg");
                 ImageCarouselTemplate imageCarouselTemplate = new ImageCarouselTemplate(
