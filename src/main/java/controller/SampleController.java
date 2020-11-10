@@ -527,7 +527,7 @@ public class SampleController {
                 //            final List<ImagemapAction> actions) {
                 this.reply(replyToken, ImagemapMessage
                         .builder()
-                        .baseUrl(createUri("/static/rich/Q1.png"))
+                        .baseUrl(createUri("/static/rich"))
                         .altText("This is alt text")
                         .baseSize(new ImagemapBaseSize(1040, 1040))
                         .actions(Arrays.asList(
