@@ -529,7 +529,7 @@ public class SampleController {
                         .builder()
                         .baseUrl(createUri("/static/rich4"))
                         .altText("This is alt text")
-                        .baseSize(new ImagemapBaseSize(1040, 700))
+                        .baseSize(new ImagemapBaseSize(1040, 1040))
                         .actions(Arrays.asList(
                                 MessageImagemapAction.builder()
                                                      .text("歯がいたい")
