@@ -531,21 +531,21 @@ public class SampleController {
                         .altText("This is alt text")
                         .baseSize(new ImagemapBaseSize(1040, 1040))
                         .actions(Arrays.asList(
-                                URIImagemapAction.builder()
-                                                 .linkUri("https://store.line.me/family/manga/en")
-                                                 .area(new ImagemapArea(0, 0, 520, 520))
-                                                 .build(),
-                                URIImagemapAction.builder()
-                                                 .linkUri("https://store.line.me/family/music/en")
-                                                 .area(new ImagemapArea(520, 0, 520, 520))
-                                                 .build(),
-                                URIImagemapAction.builder()
-                                                 .linkUri("https://store.line.me/family/play/en")
-                                                 .area(new ImagemapArea(0, 520, 520, 520))
+                                MessageImagemapAction.builder()
+                                                     .text("歯がいたい")
+                                                 .area(new ImagemapArea(0, 0, 1040, 260))
                                                  .build(),
                                 MessageImagemapAction.builder()
-                                                     .text("URANAI!")
-                                                     .area(new ImagemapArea(520, 520, 520, 520))
+                                                     .text("被せものが取れた")
+                                                 .area(new ImagemapArea(0, 260, 1040, 260))
+                                                 .build(),
+                                MessageImagemapAction.builder()
+                                                     .text("ホワイトニング")
+                                                 .area(new ImagemapArea(0, 520, 1040, 260))
+                                                 .build(),
+                                MessageImagemapAction.builder()
+                                                     .text("上記以外の内容")
+                                                     .area(new ImagemapArea(520, 780, 1040, 260))
                                                      .build()
                         ))
                         .build());
