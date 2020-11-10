@@ -520,14 +520,14 @@ public class SampleController {
                 this.reply(replyToken, templateMessage);
                 break;
             }
-            case "imagemap":
+            case "お悩み相談":
                 //            final String baseUrl,
                 //            final String altText,
                 //            final ImagemapBaseSize imagemapBaseSize,
                 //            final List<ImagemapAction> actions) {
                 this.reply(replyToken, ImagemapMessage
                         .builder()
-                        .baseUrl(createUri("/static/rich"))
+                        .baseUrl(createUri("/rich/Q1.png"))
                         .altText("This is alt text")
                         .baseSize(new ImagemapBaseSize(1040, 1040))
                         .actions(Arrays.asList(
