@@ -529,7 +529,7 @@ public class SampleController {
                         .builder()
                         .baseUrl(createUri("/static/rich"))
                         .altText("This is alt text")
-                        .baseSize(new ImagemapBaseSize(700, 700))
+                        .baseSize(new ImagemapBaseSize(1040, 1040))
                         .actions(Arrays.asList(
                                 URIImagemapAction.builder()
                                                  .linkUri("https://store.line.me/family/manga/en")
