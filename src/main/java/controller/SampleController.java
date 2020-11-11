@@ -553,6 +553,34 @@ public class SampleController {
                             ))
                             .build()));
                         break;
+                case "歯がいたい":
+                        //            final String baseUrl,
+                        //            final String altText,
+                        //            final ImagemapBaseSize imagemapBaseSize,
+                        //            final List<ImagemapAction> actions) {
+                        this.reply(replyToken,Arrays.asList(
+                            new TextMessage("次の項目に心当たりはありますか？"),
+                            ImagemapMessage
+                            .builder()
+                            .baseUrl(createUri("/static/rich2"))
+                            .altText("This is alt text")
+                            .baseSize(new ImagemapBaseSize(1040, 1040))
+                            .actions(Arrays.asList(
+                                    MessageImagemapAction.builder()
+                                                         .text("歯が痛む")
+                                                     .area(new ImagemapArea(0, 0, 1040, 347))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("出血する")
+                                                     .area(new ImagemapArea(0, 347, 1040, 347))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("食いしばってしまう")
+                                                         .area(new ImagemapArea(0, 694, 1040, 347))
+                                                         .build()
+                            ))
+                            .build()));
+                        break;
             case "imagemap_video":
                 this.reply(replyToken, ImagemapMessage
                         .builder()
