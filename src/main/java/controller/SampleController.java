@@ -525,7 +525,7 @@ public class SampleController {
                 //            final String altText,
                 //            final ImagemapBaseSize imagemapBaseSize,
                 //            final List<ImagemapAction> actions) {
-                this.reply(replyToken,Arrays.asList(new TextMessage("質問文"),ImagemapMessage
+                this.reply(replyToken,Arrays.asList(new TextMessage("質問文"),new ImagemapMessage
                         .builder()
                         .baseUrl(createUri("/static/rich1"))
                         .altText("This is alt text")
