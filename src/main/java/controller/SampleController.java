@@ -521,37 +521,37 @@ public class SampleController {
                 break;
             }
             case "お悩み相談":
-                //            final String baseUrl,
-                //            final String altText,
-                //            final ImagemapBaseSize imagemapBaseSize,
-                //            final List<ImagemapAction> actions) {
-                this.reply(replyToken,Arrays.asList(
-                    new TextMessage("質問文"),
-                    new ImagemapMessage
-                        .builder()
-                        .baseUrl(createUri("/static/rich1"))
-                        .altText("This is alt text")
-                        .baseSize(new ImagemapBaseSize(1040, 1040))
-                        .actions(Arrays.asList(
-                                MessageImagemapAction.builder()
-                                                     .text("歯がいたい")
-                                                 .area(new ImagemapArea(0, 0, 1040, 260))
-                                                 .build(),
-                                MessageImagemapAction.builder()
-                                                     .text("被せものが取れた")
-                                                 .area(new ImagemapArea(0, 260, 1040, 260))
-                                                 .build(),
-                                MessageImagemapAction.builder()
-                                                     .text("ホワイトニング")
-                                                 .area(new ImagemapArea(0, 520, 1040, 260))
-                                                 .build(),
-                                MessageImagemapAction.builder()
-                                                     .text("上記以外の内容")
-                                                     .area(new ImagemapArea(0, 780, 1040, 260))
-                                                     .build()
-                        )))
-                        .build());
-                break;
+                        //            final String baseUrl,
+                        //            final String altText,
+                        //            final ImagemapBaseSize imagemapBaseSize,
+                        //            final List<ImagemapAction> actions) {
+                        this.reply(replyToken,Arrays.asList(
+                            new TextMessage("質問文"),
+                            new ImagemapMessage
+                            .builder()
+                            .baseUrl(createUri("/static/rich1"))
+                            .altText("This is alt text")
+                            .baseSize(new ImagemapBaseSize(1040, 1040))
+                            .actions(Arrays.asList(
+                                    MessageImagemapAction.builder()
+                                                         .text("歯がいたい")
+                                                     .area(new ImagemapArea(0, 0, 1040, 260))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("被せものが取れた")
+                                                     .area(new ImagemapArea(0, 260, 1040, 260))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("ホワイトニング")
+                                                     .area(new ImagemapArea(0, 520, 1040, 260))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("上記以外の内容")
+                                                         .area(new ImagemapArea(0, 780, 1040, 260))
+                                                         .build()
+                            ))
+                            .build());
+                        break;
             case "imagemap_video":
                 this.reply(replyToken, ImagemapMessage
                         .builder()
