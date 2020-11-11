@@ -525,7 +525,7 @@ public class SampleController {
                 //            final String altText,
                 //            final ImagemapBaseSize imagemapBaseSize,
                 //            final List<ImagemapAction> actions) {
-                this.reply(replyToken, ImagemapMessage
+                this.reply(replyToken,Arrays.asList(new TextMessage(“質問文”),ImagemapMessage
                         .builder()
                         .baseUrl(createUri("/static/rich1"))
                         .altText("This is alt text")
@@ -547,7 +547,7 @@ public class SampleController {
                                                      .text("上記以外の内容")
                                                      .area(new ImagemapArea(0, 780, 1040, 260))
                                                      .build()
-                        ))
+                        )))
                         .build());
                 break;
             case "imagemap_video":
