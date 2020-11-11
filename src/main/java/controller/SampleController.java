@@ -581,6 +581,39 @@ public class SampleController {
                             ))
                             .build()));
                         break;
+                case "ホワイトニング":
+                        //            final String baseUrl,
+                        //            final String altText,
+                        //            final ImagemapBaseSize imagemapBaseSize,
+                        //            final List<ImagemapAction> actions) {
+                        this.reply(replyToken,Arrays.asList(
+                            new TextMessage("ホワイトニングでどのようなことを望みますか？"),
+                            new TextMessage("下記の該当する内容をタップしてください"),
+                            ImagemapMessage
+                            .builder()
+                            .baseUrl(createUri("/static/rich3"))
+                            .altText("This is alt text")
+                            .baseSize(new ImagemapBaseSize(1040, 1040))
+                            .actions(Arrays.asList(
+                                    MessageImagemapAction.builder()
+                                                         .text("短期間")
+                                                     .area(new ImagemapArea(0, 0, 1040, 260))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("プロの技術")
+                                                     .area(new ImagemapArea(0, 260, 1040, 260))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("忙しい")
+                                                     .area(new ImagemapArea(0, 520, 1040, 260))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("満足するまで")
+                                                         .area(new ImagemapArea(0, 780, 1040, 260))
+                                                         .build()
+                            ))
+                            .build()));
+                        break;
             case "imagemap_video":
                 this.reply(replyToken, ImagemapMessage
                         .builder()
