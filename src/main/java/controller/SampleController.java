@@ -637,6 +637,52 @@ public class SampleController {
                             ))
                             .build()));
                         break;
+                case "出血する":
+                        //            final String baseUrl,
+                        //            final String altText,
+                        //            final ImagemapBaseSize imagemapBaseSize,
+                        //            final List<ImagemapAction> actions) {
+                        this.reply(replyToken,Arrays.asList(
+                            ImagemapMessage
+                            .builder()
+                            .baseUrl(createUri("/static/rich8"))
+                            .altText("This is alt text")
+                            .baseSize(new ImagemapBaseSize(1040, 1040))
+                            .actions(Arrays.asList(
+                                    URIImagemapAction.builder()
+                                                 .linkUri("https://www.venus-dental.com/preventive-care.html#perio")
+                                                 .area(new ImagemapArea(0, 830, 500,170 ))
+                                                 .build(),
+                                    URIImagemapAction.builder()
+                                                 .linkUri("https://ssl.haisha-yoyaku.jp/x6258447/sp/login/serviceAppoint/index?SITE_CODE=hp&inapp=&__FLOWID__=2c723a36f79db98877e8d60761abb3494e4ef8f4")
+                                                 .area(new ImagemapArea(550, 830, 450,170 ))
+                                                 .build()
+                            ))
+                            .build()));
+                        break;
+                case "食いしばってしまう":
+                        //            final String baseUrl,
+                        //            final String altText,
+                        //            final ImagemapBaseSize imagemapBaseSize,
+                        //            final List<ImagemapAction> actions) {
+                        this.reply(replyToken,Arrays.asList(
+                            ImagemapMessage
+                            .builder()
+                            .baseUrl(createUri("/static/rich9"))
+                            .altText("This is alt text")
+                            .baseSize(new ImagemapBaseSize(1040, 1040))
+                            .actions(Arrays.asList(
+                                    URIImagemapAction.builder()
+                                                 .linkUri("https://www.venus-dental.com/preventive-care.html#perio")
+                                                 .area(new ImagemapArea(0, 830, 500,170 ))
+                                                 .build(),
+                                    URIImagemapAction.builder()
+                                                 .linkUri("https://ssl.haisha-yoyaku.jp/x6258447/sp/login/serviceAppoint/index?SITE_CODE=hp&inapp=&__FLOWID__=2c723a36f79db98877e8d60761abb3494e4ef8f4")
+                                                 .area(new ImagemapArea(550, 830, 450,170 ))
+                                                 .build()
+                            ))
+                            .build()));
+                        break;
             case "imagemap_video":
                 this.reply(replyToken, ImagemapMessage
                         .builder()
