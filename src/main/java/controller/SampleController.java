@@ -550,7 +550,7 @@ public class SampleController {
                                                          .area(new ImagemapArea(0, 780, 1040, 260))
                                                          .build()
                             ))
-                            .build());
+                            .build()));
                         break;
             case "imagemap_video":
                 this.reply(replyToken, ImagemapMessage
