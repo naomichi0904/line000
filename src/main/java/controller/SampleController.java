@@ -526,7 +526,8 @@ public class SampleController {
                         //            final ImagemapBaseSize imagemapBaseSize,
                         //            final List<ImagemapAction> actions) {
                         this.reply(replyToken,Arrays.asList(
-                            new TextMessage("質問文"),
+                            new TextMessage("お悩み相談ですね！"),
+                            new TextMessage("下記の該当する内容をタップしてください"),
                             ImagemapMessage
                             .builder()
                             .baseUrl(createUri("/static/rich1"))
