@@ -536,19 +536,27 @@ public class SampleController {
                             .actions(Arrays.asList(
                                     MessageImagemapAction.builder()
                                                          .text("歯がいたい")
-                                                     .area(new ImagemapArea(0, 0, 1040, 260))
+                                                     .area(new ImagemapArea(0, 0, 350, 480))
                                                      .build(),
                                     MessageImagemapAction.builder()
                                                          .text("被せものが取れた")
-                                                     .area(new ImagemapArea(0, 260, 1040, 260))
+                                                     .area(new ImagemapArea(350, 0, 330, 480))
                                                      .build(),
                                     MessageImagemapAction.builder()
                                                          .text("ホワイトニング")
-                                                     .area(new ImagemapArea(0, 520, 1040, 260))
+                                                     .area(new ImagemapArea(700, 0, 320, 480))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("インプラント")
+                                                     .area(new ImagemapArea(0, 560, 350, 420))
+                                                     .build(),
+                                    MessageImagemapAction.builder()
+                                                         .text("矯正")
+                                                     .area(new ImagemapArea(350, 560, 330, 420))
                                                      .build(),
                                     MessageImagemapAction.builder()
                                                          .text("上記以外の内容")
-                                                         .area(new ImagemapArea(0, 780, 1040, 260))
+                                                         .area(new ImagemapArea(700, 560, 320, 420))
                                                          .build()
                             ))
                             .build()));
