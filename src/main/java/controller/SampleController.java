@@ -530,7 +530,7 @@ public class SampleController {
                             new TextMessage("下記の該当する内容をタップしてください"),
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich1"))
+                            .baseUrl(createUri("/static/rich13"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
