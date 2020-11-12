@@ -530,7 +530,7 @@ public class SampleController {
                             new TextMessage("下記の該当する内容をタップしてください"),
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich13"))
+                            .baseUrl(createUri("/static/tap"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -570,21 +570,21 @@ public class SampleController {
                             new TextMessage("次の項目に心当たりはありますか？"),
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich2"))
+                            .baseUrl(createUri("/static/tap2"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
                                     MessageImagemapAction.builder()
                                                          .text("歯が痛む")
-                                                     .area(new ImagemapArea(0, 0, 1040, 347))
+                                                     .area(new ImagemapArea(0, 230, 1040, 170))
                                                      .build(),
                                     MessageImagemapAction.builder()
                                                          .text("出血する")
-                                                     .area(new ImagemapArea(0, 347, 1040, 347))
+                                                     .area(new ImagemapArea(0, 430, 1040, 170))
                                                      .build(),
                                     MessageImagemapAction.builder()
                                                          .text("食いしばってしまう")
-                                                         .area(new ImagemapArea(0, 694, 1040, 347))
+                                                         .area(new ImagemapArea(0, 630, 1040, 170))
                                                          .build()
                             ))
                             .build()));
@@ -599,26 +599,84 @@ public class SampleController {
                             new TextMessage("下記の該当する内容をタップしてください"),
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich3"))
+                            .baseUrl(createUri("/static/tap3"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
                                     MessageImagemapAction.builder()
                                                          .text("短期間")
-                                                     .area(new ImagemapArea(0, 0, 1040, 260))
+                                                     .area(new ImagemapArea(0, 190, 1040,170))
                                                      .build(),
                                     MessageImagemapAction.builder()
                                                          .text("プロの技術")
-                                                     .area(new ImagemapArea(0, 260, 1040, 260))
+                                                     .area(new ImagemapArea(0, 350, 1040, 170))
                                                      .build(),
                                     MessageImagemapAction.builder()
                                                          .text("忙しい")
-                                                     .area(new ImagemapArea(0, 520, 1040, 260))
+                                                     .area(new ImagemapArea(0, 520, 1040, 170))
                                                      .build(),
                                     MessageImagemapAction.builder()
                                                          .text("満足するまで")
-                                                         .area(new ImagemapArea(0, 780, 1040, 260))
+                                                         .area(new ImagemapArea(0, 690, 1040, 170))
                                                          .build()
+                            ))
+                            .build()));
+                        break;
+                case "インプラント":
+                        //            final String baseUrl,
+                        //            final String altText,
+                        //            final ImagemapBaseSize imagemapBaseSize,
+                        //            final List<ImagemapAction> actions) {
+                        this.reply(replyToken,Arrays.asList(
+                            new TextMessage("インプラントですね"),
+                            new TextMessage("下記から気になる内容をタップしてください"),
+                            ImagemapMessage
+                            .builder()
+                            .baseUrl(createUri("/static/tap4"))
+                            .altText("This is alt text")
+                            .baseSize(new ImagemapBaseSize(1040, 1040))
+                            .actions(Arrays.asList(
+                                    URIImagemapAction.builder()
+                                                 .linkUri("https://akasaka-venusblog.com/implant/")
+                                                 .area(new ImagemapArea(0, 230, 1040,170 ))
+                                                 .build(),
+                               　　　URIImagemapAction.builder()
+                                                 .linkUri("https://akasaka-venusblog.com/implant/")
+                                                 .area(new ImagemapArea(0, 430, 1040,170 ))
+                                                 .build(),
+                                    URIImagemapAction.builder()
+                                                 .linkUri("https://akasaka-venusblog.com/implant/")
+                                                 .area(new ImagemapArea(0, 630, 1040,170 ))
+                                                 .build()
+                            ))
+                            .build()));
+                        break;
+                case "矯正":
+                        //            final String baseUrl,
+                        //            final String altText,
+                        //            final ImagemapBaseSize imagemapBaseSize,
+                        //            final List<ImagemapAction> actions) {
+                        this.reply(replyToken,Arrays.asList(
+                            new TextMessage("矯正ですね"),
+                            new TextMessage("下記から気になる内容をタップしてください"),
+                            ImagemapMessage
+                            .builder()
+                            .baseUrl(createUri("/static/tap5"))
+                            .altText("This is alt text")
+                            .baseSize(new ImagemapBaseSize(1040, 1040))
+                            .actions(Arrays.asList(
+                                    URIImagemapAction.builder()
+                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
+                                                 .area(new ImagemapArea(0, 230, 1040,170 ))
+                                                 .build(),
+                               　　　URIImagemapAction.builder()
+                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
+                                                 .area(new ImagemapArea(0, 430, 1040,170 ))
+                                                 .build(),
+                                    URIImagemapAction.builder()
+                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
+                                                 .area(new ImagemapArea(0, 630, 1040,170 ))
+                                                 .build()
                             ))
                             .build()));
                         break;
@@ -630,7 +688,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich7"))
+                            .baseUrl(createUri("/static/tap6"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -653,7 +711,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich8"))
+                            .baseUrl(createUri("/static/tap7"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -676,7 +734,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich9"))
+                            .baseUrl(createUri("/static/tap8"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -699,7 +757,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich10"))
+                            .baseUrl(createUri("/static/tap9"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -722,7 +780,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich11"))
+                            .baseUrl(createUri("/static/tap10"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -745,7 +803,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich11"))
+                            .baseUrl(createUri("/static/tap10"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -768,7 +826,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich12"))
+                            .baseUrl(createUri("/static/tap11"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -791,7 +849,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich12"))
+                            .baseUrl(createUri("/static/tap11"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
@@ -814,7 +872,7 @@ public class SampleController {
                         this.reply(replyToken,Arrays.asList(
                             ImagemapMessage
                             .builder()
-                            .baseUrl(createUri("/static/rich13"))
+                            .baseUrl(createUri("/static/tap12"))
                             .altText("This is alt text")
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
