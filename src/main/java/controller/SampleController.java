@@ -666,15 +666,15 @@ public class SampleController {
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
                                     URIImagemapAction.builder()
-                                                 .linkUri("https://akasaka-venusblog.com/implant/")
+                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
                                                  .area(new ImagemapArea(0, 230, 1040,170 ))
                                                  .build(),
                                 URIImagemapAction.builder()
-                                                 .linkUri("https://akasaka-venusblog.com/implant/")
+                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
                                                  .area(new ImagemapArea(0, 430, 1040,170 ))
                                                  .build(),
                                     URIImagemapAction.builder()
-                                                 .linkUri("https://akasaka-venusblog.com/implant/")
+                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
                                                  .area(new ImagemapArea(0, 630, 1040,180 ))
                                                  .build()
                             ))
