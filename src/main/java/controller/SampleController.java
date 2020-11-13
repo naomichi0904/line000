@@ -640,13 +640,13 @@ public class SampleController {
                                                  .linkUri("https://akasaka-venusblog.com/implant/")
                                                  .area(new ImagemapArea(0, 230, 1040,170 ))
                                                  .build(),
-                               　　　URIImagemapAction.builder()
+                                URIImagemapAction.builder()
                                                  .linkUri("https://akasaka-venusblog.com/implant/")
                                                  .area(new ImagemapArea(0, 430, 1040,170 ))
                                                  .build(),
                                     URIImagemapAction.builder()
                                                  .linkUri("https://akasaka-venusblog.com/implant/")
-                                                 .area(new ImagemapArea(0, 630, 1040,170 ))
+                                                 .area(new ImagemapArea(0, 630, 1040,180 ))
                                                  .build()
                             ))
                             .build()));
@@ -657,7 +657,7 @@ public class SampleController {
                         //            final ImagemapBaseSize imagemapBaseSize,
                         //            final List<ImagemapAction> actions) {
                         this.reply(replyToken,Arrays.asList(
-                            new TextMessage("矯正ですね"),
+                            new TextMessage("歯列矯正ですね"),
                             new TextMessage("下記から気になる内容をタップしてください"),
                             ImagemapMessage
                             .builder()
@@ -666,16 +666,16 @@ public class SampleController {
                             .baseSize(new ImagemapBaseSize(1040, 1040))
                             .actions(Arrays.asList(
                                     URIImagemapAction.builder()
-                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
+                                                 .linkUri("https://akasaka-venusblog.com/implant/")
                                                  .area(new ImagemapArea(0, 230, 1040,170 ))
                                                  .build(),
-                               　　　URIImagemapAction.builder()
-                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
+                                URIImagemapAction.builder()
+                                                 .linkUri("https://akasaka-venusblog.com/implant/")
                                                  .area(new ImagemapArea(0, 430, 1040,170 ))
                                                  .build(),
                                     URIImagemapAction.builder()
-                                                 .linkUri("https://akasaka-venusblog.com/venusline/")
-                                                 .area(new ImagemapArea(0, 630, 1040,170 ))
+                                                 .linkUri("https://akasaka-venusblog.com/implant/")
+                                                 .area(new ImagemapArea(0, 630, 1040,180 ))
                                                  .build()
                             ))
                             .build()));
@@ -695,7 +695,7 @@ public class SampleController {
                                     URIImagemapAction.builder()
                                                  .linkUri("https://www.venus-dental.com/preventive-care.html#perio")
                                                  .area(new ImagemapArea(0, 830, 500,170 ))
-                                                 .build(),
+                                                 .build()
                                     URIImagemapAction.builder()
                                                  .linkUri("https://ssl.haisha-yoyaku.jp/x6258447/sp/login/serviceAppoint/index?SITE_CODE=hp&inapp=&__FLOWID__=2c723a36f79db98877e8d60761abb3494e4ef8f4")
                                                  .area(new ImagemapArea(550, 830, 450,170 ))
