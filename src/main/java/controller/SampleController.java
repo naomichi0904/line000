@@ -212,7 +212,7 @@ public class SampleController {
     @EventMapping
     public void handleFollowEvent(FollowEvent event) {
         String replyToken = event.getReplyToken();
-        this.replyText(replyToken, "Got followed event");
+        this.replyText(replyToken, );
     }
 
     @EventMapping
